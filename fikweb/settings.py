@@ -44,7 +44,10 @@ INSTALLED_APPS = [
     'porto'
 ]
 
-csrf_trusted_origins = ['https://ex-web-porto-production.up.railway.app', 'http://127.0.0.1:8000']
+CSRF_TRUSTED_ORIGINS = [
+    "https://ex-web-porto-production.up.railway.app",
+    "http://127.0.0.1:8000",
+]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
